@@ -29,7 +29,7 @@ body {
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform .5s;
+    transition: transform;
 }
 
 .memory-card:active {
@@ -44,19 +44,17 @@ body {
 .front-face,
 .back-face {
     width: 100px;
-    padding: 20px 10px;
     position: absolute;
     border-radius: 5px;
-    background: #1c7ccc;
 }
 
 .front-face {
-    width: 120%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
 }
 
 .back-face {
-    width: 120px;
+    width: 200px;
     height: 200px;
 }
 
