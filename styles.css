@@ -6,9 +6,45 @@
 
 body {
     height: 100vh;
+    display: flex;
     background: #004324;
 }
 
-img {
-    width: 100px;
+
+/*  Memory Game Starts  */
+
+.memory-game {
+    width: 740px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid lime;
 }
+
+.memory-card {
+    width: calc(25% - 20px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+}
+
+.front-face,
+.back-face {
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1c7ccc;
+}
+
+.front-face {
+    width: 120%;
+    height: 100%;
+}
+
+.back-face {
+    width: 60%;
+    height: 90%;
+}
+
+
+/*  Memory Game Ends  */
