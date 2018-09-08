@@ -8,6 +8,7 @@ body {
     height: 100vh;
     display: flex;
     background: #004324;
+    margin: 10px;
 }
 
 
@@ -17,6 +18,7 @@ body {
     width: 740px;
     height: 640px;
     margin: auto;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
@@ -25,15 +27,15 @@ body {
 .memory-card {
     width: calc(25% - 20px);
     height: calc(33.333% - 10px);
-    margin: 5px;
+    margin: 10px;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform;
+    transition: transform .5s;
 }
 
 .memory-card:active {
-    transform: scale(.97);
+    transform: scale(.90);
     transition: transform .2s;
 }
 
@@ -45,12 +47,15 @@ body {
 .back-face {
     width: 100px;
     position: absolute;
-    border-radius: 5px;
+    border-radius: 10px;
+    backface-visibility: hidden;
 }
 
 .front-face {
     width: 200px;
     height: 200px;
+    transform: rotateY(180deg);
+    margin-left: -40px;
 }
 
 .back-face {
